@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0f3d2e, #14532d);
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #d1fae5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 420px 180px;
+  gap: 20px;
+}
+
+.card {
+  background: #1b4332;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #95d5b2;
+}
+
+.adicionar {
+  grid-row: span 2;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #2d6a4f;
+  color: white;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #d8f3dc;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #52b788;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #74c69d;
+  transform: scale(1.02);
+}
+
+#gastos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+  max-height: 320px;
+}
+
+.gasto {
+  background: #2d6a4f;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.gasto h3 {
+  color: #d8f3dc;
+  margin-bottom: 8px;
+}
+
+.gasto p {
+  margin-bottom: 5px;
+}
+
+.resultado {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resultado p {
+  font-size: 18px;
+  color: #d8f3dc;
+}
+
+.resultado h3 {
+  font-size: 40px;
+  margin-top: 10px;
+  color: #74c69d;
+}
+
+.success {
+  background: #40916c;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.error {
+  background: #bc4749;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+@media(max-width: 900px) {
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .adicionar {
+    grid-row: auto;
+  }
+
+}

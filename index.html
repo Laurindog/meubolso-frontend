@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MeuBolso - Controle de Gastos</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>💸 Meus Gastos</h1>
+
+    <div class="grid">
+
+      <!-- ESQUERDA -->
+      <div class="card adicionar">
+
+        <h2>Adicionar Gasto</h2>
+
+        <div id="mensagem"></div>
+
+        <input type="text" id="descricao" placeholder="Descrição">
+
+        <input type="number" id="valor" placeholder="Valor">
+
+        <input type="text" id="categoria" placeholder="Categoria">
+
+        <button onclick="adicionarGasto()">
+          Adicionar
+        </button>
+
+      </div>
+
+      <!-- DIREITA SUPERIOR -->
+      <div class="card lista">
+
+        <h2>Lista de Gastos</h2>
+
+        <div id="gastos"></div>
+
+      </div>
+
+      <!-- DIREITA INFERIOR -->
+      <div class="card resumo">
+
+        <h2>Resumo</h2>
+
+        <div class="resultado">
+          <p>Total de gastos:</p>
+
+          <h3 id="total">R$ 0,00</h3>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
