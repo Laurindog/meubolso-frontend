@@ -1,5 +1,5 @@
 // URL do backend
-const API_URL = "https://SEU-BACKEND.onrender.com";
+const API_URL = "https://meubolso-backend-46es.onrender.com";
 
 async function carregarGastos() {
 
